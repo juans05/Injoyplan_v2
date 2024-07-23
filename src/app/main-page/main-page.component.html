@@ -1,0 +1,217 @@
+<div class="main-page-container">
+    <header>
+      <div class="logo-section">
+        <img src="https://www.injoyplan.com/assets/imagenes/Isologo_Color_V.png" alt="Injoyplan Logo" class="logo-icon">
+        <span class="logo-text">Injoyplan</span>
+      </div>
+      <div class="search-bar">
+        <div class="search-icon"></div>
+        <input type="text" placeholder="Buscar eventos..." class="search-input">
+      </div>
+      <div class="icons">
+        <button class="icon-button" routerLink="/favorites">
+          <img src="https://w7.pngwing.com/pngs/899/448/png-transparent-famous-favorite-featured-star-super-basic-ui-jumpicon-filled-line-icon.png" alt="Favoritos" class="icon heart-icon">
+        </button>
+        <button class="icon-button" routerLink="/login">
+          <img src="https://www.injoyplan.com/assets/imagenes/user_sgv.svg" alt="Login" class="icon login-icon">
+        </button>
+        <button class="icon-button" routerLink="/prueba">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-oO4dsLNJNzzJvtRiGbiWUZDLblc7_5FjWA&s" alt="prueba" class="icon login-icon">
+        </button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="carousel">
+        <div class="carousel-container" #carouselContainer>
+          <img src="" alt="Carousel Image 1" class="carousel-image">
+          <img src="" alt="Carousel Image 2" class="carousel-image">
+          <img src="https://whitescreen.online/image/white-background.png" alt="Carousel Image 3" class="carousel-image">
+        </div>
+        <button class="carousel-control prev" (click)="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" (click)="nextSlide()">&#10095;</button>
+      </div>
+      <div class="categories">
+        <div class="category-button" routerLink="/music">
+          <img src="https://res.cloudinary.com/do4rokki9/image/upload/v1617412460/InjoyPlan/musica.svg" alt="Música" class="category-icon">
+          <span>Música</span>
+        </div>
+        <div class="category-button" routerLink="/entertainment">
+          <img src="https://res.cloudinary.com/do4rokki9/image/upload/v1617412460/InjoyPlan/musica.svg" alt="Entretenimiento" class="category-icon">
+          <span>Entretenimiento</span>
+        </div>
+        <div class="category-button" routerLink="/theater">
+          <img src="https://res.cloudinary.com/do4rokki9/image/upload/v1617412460/InjoyPlan/musica.svg" alt="Teatro" class="category-icon">
+          <span>Teatro</span>
+        </div>
+        <div class="category-button" routerLink="/culture">
+          <img src="https://res.cloudinary.com/do4rokki9/image/upload/v1617412460/InjoyPlan/musica.svg" alt="Cultura" class="category-icon">
+          <span>Cultura</span>
+        </div>
+      </div>
+      <div class="event-section">
+        <h2 class="section-title">Más eventos para ti</h2>
+        <div class="more-events">
+          <!-- Aquí se muestran 4 eventos -->
+          <div class="event">
+            <img src="https://depor.com/resizer/Nz76YFJDMVNClKX3d9o8gkLk8ew=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z4WUVCOMBZGVLN4TM6RZLOLKME.jpeg" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 1</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6a/a0/24/20180322-145842-largejpg.jpg?w=1200&h=1200&s=1" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 2</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-99dWD4lR3ZtRAX113h5NDEsCfgJB_UxCw&s" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 3</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://www.directoriohoreca.com/sites/default/files/Dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202022-02-21T155027.396.png" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 4</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <!-- Aquí se muestran 4 eventos -->
+          <div class="event">
+            <img src="https://depor.com/resizer/Nz76YFJDMVNClKX3d9o8gkLk8ew=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z4WUVCOMBZGVLN4TM6RZLOLKME.jpeg" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 1</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6a/a0/24/20180322-145842-largejpg.jpg?w=1200&h=1200&s=1" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 2</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-99dWD4lR3ZtRAX113h5NDEsCfgJB_UxCw&s" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 3</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://www.directoriohoreca.com/sites/default/files/Dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202022-02-21T155027.396.png" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 4</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <!-- Aquí se muestran 4 eventos -->
+          <div class="event">
+            <img src="https://depor.com/resizer/Nz76YFJDMVNClKX3d9o8gkLk8ew=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z4WUVCOMBZGVLN4TM6RZLOLKME.jpeg" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 1</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6a/a0/24/20180322-145842-largejpg.jpg?w=1200&h=1200&s=1" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 2</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-99dWD4lR3ZtRAX113h5NDEsCfgJB_UxCw&s" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 3</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="https://www.directoriohoreca.com/sites/default/files/Dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202022-02-21T155027.396.png" alt="Evento 1" class="event-image">
+            <div class="event-details">
+              <p class="event-date">Fecha: 2024-07-18</p>
+              <h3 class="event-title">Título del Evento 4</h3>
+              <p class="event-description">Descripción del evento 1.</p>
+              <p class="event-price">Precio: $50</p>
+            </div>
+          </div>
+          <!-- Repetir para los siguientes eventos -->
+        </div>
+      </div>
+      <div class="newsletter-banner">
+        <h2>¡No te pierdas de los mejores eventos!</h2>
+        <p>Déjanos tu correo y te avisamos</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Escribe tu correo electrónico" />
+          <button type="button">ENVIAR</button>
+        </div>
+        <div class="banner-image">
+          <img src="https://cdn-icons-png.freepik.com/512/646/646094.png" alt="Banner Image" />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+        
+        <div class="footer-section">
+            <button class="footer-button" onclick="window.location.href='#'">Conócenos</button>
+            <p onclick="window.location.href='#'">Acerca de nosotros</p>
+          </div>
+          <div class="footer-section">
+            <button class="footer-button" onclick="window.location.href='#'">¿Necesitas ayuda?</button>
+            <p onclick="window.location.href='#'">Preguntas frecuentes</p>
+            <p onclick="window.location.href='#'">Contáctanos</p>
+          </div>
+          <div class="footer-section">
+            <button class="footer-button" onclick="window.location.href='#'">Políticas</button>
+            <p onclick="window.location.href='#'">Política de privacidad</p>
+            <p onclick="window.location.href='#'">Política de cookies</p>
+            <p onclick="window.location.href='#'">Términos y condiciones de uso</p>
+          </div>
+          <div class="footer-section">
+            <button class="footer-button" onclick="window.location.href='mailto:contacto@injoyplan.com'">Contáctanos</button>
+            <p onclick="window.location.href='mailto:contacto@injoyplan.com'">Escríbenos a nuestra casilla de correo:</p>
+            <p><a href="mailto:contacto@injoyplan.com">contacto@injoyplan.com</a></p>
+          </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-black-section">
+            <p>Copyright &copy; 2021 Injoyplan</p>
+            <div class="social-icons">
+              <a href="#"><img src="https://w7.pngwing.com/pngs/662/470/png-transparent-fb-facebook-facebook-logo-social-media-solid-icon.png" alt="Facebook" /></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1532/1532424.png" alt="Twitter" /></a>
+              <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/473/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  

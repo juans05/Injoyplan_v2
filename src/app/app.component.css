@@ -1,0 +1,102 @@
+/* app.component.css */
+
+/* Estilos para el loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  /* Estilos para la ventana emergente (modal) */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 3000; /* Asegura que esté por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con transparencia */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Ancho máximo */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+  
+  .modal-content h1 {
+    font-size: 2em;
+    color: #B22222; /* Color del texto */
+  }
+  
+  .modal-content p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .category span {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  button {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #1C86EE;
+  }
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    color: #1E90FF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

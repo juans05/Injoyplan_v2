@@ -1,0 +1,359 @@
+/* Estilos generales */
+.main-page-container {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Cambia este color si es necesario */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.search-bar {
+  width: 480px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url('https://img.freepik.com/vector-premium/icono-busqueda-simbolo-lupa-icono-contorno_543062-139.jpg?w=360');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 15px; /* Ajuste del margen izquierdo para los iconos */
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px; /* Ajuste del margen izquierdo para los botones de iconos */
+}
+
+.search-input {
+  border-radius: 20px; /* Barra de búsqueda con puntas curveadas */
+  width: calc(100% - 40px);
+  padding: 10px 30px 10px 40px;
+  font-size: 1em;
+  color: #999;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  position: relative;
+  width: calc(100% - 280px);
+  max-width: 800px;
+  height: auto;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 250px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  margin-top: -360px;
+}
+
+.category-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.category-icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+.category span {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.event-section {
+  margin-top: 20px; /* Espacio superior para separar del carrusel */
+}
+
+.more-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Reducido aún más el espacio entre los eventos */
+  justify-content: center; /* Centrados */
+}
+
+.event {
+  flex: 1 1 calc(25% - 10px); /* Ajustado el ancho para mostrar 4 eventos por fila con menos margen entre ellos */
+  max-width: 290px; /* Ajuste del ancho máximo para cada evento */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Borde del marco */
+  border-radius: 10px; /* Bordes curvos */
+  overflow: hidden;
+  background-color: #fff; /* Fondo blanco para el evento */
+  margin-bottom: 10px; /* Reducir el margen inferior para juntar más los eventos */
+}
+
+.event-image {
+  width: 100%;
+  height: 156px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajustar imagen manteniendo la relación de aspecto */
+  margin-bottom: 10px;
+}
+
+.event-details {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.event-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-description,
+.event-date,
+.event-price {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.newsletter-banner {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.newsletter-banner h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.newsletter-banner p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: white;
+  color: #8B0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner-image {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.banner-image img {
+  width: 100px;
+  height: auto;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section button {
+  margin: 5px 0;
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+}
+
+.footer-section p:hover,
+.footer-section button:hover {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  margin-right: 20px; /* Espacio entre íconos y libro de reclamaciones */
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: auto;
+}
+
+.reclamation-book a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.footer-black-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-black-section .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-black-section .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer-black-section .right-section p {
+  margin-left: 20px; /* Espacio entre texto de copyright y íconos */
+}
+
+
